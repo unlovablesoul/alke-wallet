@@ -1,0 +1,126 @@
+/* -----------------
+   Paleta principal
+   ----------------- */
+
+   :root {
+  /* Paleta principal - Cherry Blossom */
+  --bg-general: #FAEEF3;     /* fondo general rosado muy suave */
+  --bg-card: #ffffff;       /* tarjetas / contenedores */
+  --text-primary: #3A2A33;  /* texto principal oscuro */
+  --text-secondary: #7A5C69;/* texto secundario */
+  --btn-main: #E88AB3;      /* botón principal */
+  --btn-hover: #D97AA3;     /* hover del botón */
+  --input-bg: #ffffff;     /* fondo inputs */
+  --border-dark: #E4C6D3;   /* bordes suaves */
+}
+
+
+/* -----------------
+   Global styles
+   ----------------- */
+body {
+  background-color: var(--bg-general);
+  color: var(--text-primary);
+  font-family: 'Oswald', Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------
+   Contenedores principales
+   ----------------- */
+.container {
+  background-color: var(--bg-general);
+  padding: 1.5rem;
+}
+
+/* -----------------
+   Tarjetas
+   ----------------- */
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: 10px;
+  color: var(--text-primary);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+/* -----------------
+   Títulos y encabezados
+   ----------------- */
+h1, h2, h3 {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* -----------------
+   Inputs
+   ----------------- */
+.form-control {
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-dark);
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  border-color: var(--btn-main);
+  box-shadow: none;
+}
+
+/* -----------------
+   Botones
+   ----------------- */
+.btn-primary {
+  background-color: var(--btn-main);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-hover);
+}
+
+/* -----------------
+   Links
+   ----------------- */
+a {
+  color: var(--btn-main);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------
+   Texto secundario
+   ----------------- */
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* -----------------
+   Tablas (historial)
+   ----------------- */
+.table {
+  color: var(--text-primary);
+}
+
+.table thead {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.table tbody tr {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+/* -----------------
+   Alerts y mensajes
+   ----------------- */
+#mensaje, #ok, #error {
+  font-weight: 500;
+}
