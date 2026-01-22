@@ -1,9 +1,5 @@
-/* -----------------
-   Paleta principal
-   ----------------- */
-
    :root {
-  /* Paleta principal - Cherry Blossom */
+  /* Paleta principal Cherry Blossom */
   --bg-general: #FAEEF3;     /* fondo general rosado muy suave */
   --bg-card: #ffffff;       /* tarjetas / contenedores */
   --text-primary: #3A2A33;  /* texto principal oscuro */
@@ -13,11 +9,8 @@
   --input-bg: #ffffff;     /* fondo inputs */
   --border-dark: #E4C6D3;   /* bordes suaves */
 }
+/* Esta parte me costo mucho asi que tuve que recurrir a ayudas externas solo para que quedaran bonitos y ordenados los colores y saber cual modificar */
 
-
-/* -----------------
-   Global styles
-   ----------------- */
 body {
   background-color: var(--bg-general);
   color: var(--text-primary);
@@ -26,9 +19,7 @@ body {
   padding: 0;
 }
 
-/* -----------------
-   Contenedores principales
-   ----------------- */
+/* Para los contenedores  */
 .container {
   background-color: var(--bg-general);
   padding: 1.5rem;
@@ -47,17 +38,13 @@ body {
   box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
 }
 
-/* -----------------
-   Títulos y encabezados
-   ----------------- */
+/* Para los titulos y encabezados */
 h1, h2, h3 {
   color: var(--text-primary);
   font-weight: 600;
 }
 
-/* -----------------
-   Inputs
-   ----------------- */
+/* Para los inputs*/
 .form-control {
   background-color: var(--input-bg);
   color: var(--text-primary);
@@ -70,9 +57,7 @@ h1, h2, h3 {
   box-shadow: none;
 }
 
-/* -----------------
-   Botones
-   ----------------- */
+/* Para los botones */
 .btn-primary {
   background-color: var(--btn-main);
   border: none;
@@ -82,9 +67,7 @@ h1, h2, h3 {
   background-color: var(--btn-hover);
 }
 
-/* -----------------
-   Links
-   ----------------- */
+/* Los enlaces */
 a {
   color: var(--btn-main);
   text-decoration: none;
@@ -94,16 +77,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* -----------------
-   Texto secundario
-   ----------------- */
+/* Para el texto secundario */
 .text-secondary {
   color: var(--text-secondary);
 }
 
-/* -----------------
-   Tablas (historial)
-   ----------------- */
+/* Para el historial*/
 .table {
   color: var(--text-primary);
 }
@@ -118,9 +97,40 @@ a:hover {
   border-bottom: 1px solid var(--border-dark);
 }
 
-/* -----------------
-   Alerts y mensajes
-   ----------------- */
+/* Para las alertas y mensajes */
 #mensaje, #ok, #error {
   font-weight: 500;
+}
+
+/* Para la NavBar*/
+.navbar-cherry {
+  background-color: #FAEEF3;
+  border-bottom: 1px solid #E4C6D3;
+}
+
+.navbar-cherry .navbar-brand {
+  color: #3A2A33;
+}
+
+.navbar-cherry .nav-link {
+  color: #3A2A33;
+  font-weight: 500;
+}
+
+.navbar-cherry .nav-link:hover {
+  color: #E88AB3;
+}
+
+/* Para el boton */
+.btn-cherry {
+  background-color: #E88AB3;
+  border: 1px solid #E88AB3;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-cherry:hover {
+  background-color: #D97AA3;
+  border-color: #D97AA3;
+  color: #fff;
 }
