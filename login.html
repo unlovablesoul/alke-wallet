@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Alke Wallet | Login</title>
 
+    <title>Alke Wallet | Login</title>
+    <!-- Aqui cargue todo lo que son las fuentes, el bootstrap, el css, js , etc. Considerando que, hago referencia a los archivos creados-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,12 +22,13 @@
 
     <script src="js/login.js"></script>
   </head>
+
   <body class="bg-light">
     <main
       class="container vh-100 d-flex justify-content-center align-items-center"
     >
       <section class="card p-4 shadow" style="width: 100%; max-width: 400px">
-        <h3 class="text-center mb-4">Alke Wallet</h3>
+        <h3 class="text-center mb-4">Alke Wallet Billetera</h3>
 
         <form id="loginForm">
           <div class="mb-3">
@@ -43,7 +45,7 @@
               required
             />
           </div>
-
+          <!-- Aqui genero un mensaje para cuando se ingrese mal las credenciales. Mencionar que las credenciales son admin@alke.cl pass: 1234 -->
           <div id="error" class="text-danger text-center mb-3 d-none">
             Credenciales incorrectas
           </div>
